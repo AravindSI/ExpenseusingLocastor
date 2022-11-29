@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+</head>
+<h1>Expense tracker</h1>
+<body>
+    
+    <form onsubmit="saveToCloudStorage(event)">
+        <label for="ChooseExpenseAmount">ChooseExpenseAmount:</label>
+        <input type="text" name="ChooseExpenseAmount" id="ChooseExpenseAmount" placeholder="In Rs">
+        <label for="choose description">Choose Description:</label>
+        <input type="text" name="chooseDescription" id="choose description" placeholder="In words">
+        <label for="choose a category">Choose A category:</label>
+        <input type="text" name="chooseACategory" id="choose a category" placeholder="In words">
+        <button type="submit">Add Expense:</button>
+    </form>
+    <ul id="listOfExpense"></ul>
+    <script src="expense.js"></script>
+    
+</body>
+</html>

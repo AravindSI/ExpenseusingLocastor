@@ -5,20 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <h1>Expense tracker</h1>
 <body>
     
     <form onsubmit="saveToCloudStorage(event)">
-        <label for="ChooseExpenseAmount">ChooseExpenseAmount:</label>
-        <input type="text" name="ChooseExpenseAmount" id="ChooseExpenseAmount" placeholder="In Rs">
-        <label for="choose description">Choose Description:</label>
-        <input type="text" name="chooseDescription" id="choose description" placeholder="In words">
-        <label for="choose a category">Choose A category:</label>
-        <input type="text" name="chooseACategory" id="choose a category" placeholder="In words">
-        <button type="submit">Add Expense:</button>
+        <div>
+            <label for="ChooseExpenseAmount">ChooseExpenseAmount:</label>
+            <input type="text" name="ChooseExpenseAmount" id="ChooseExpenseAmount" placeholder="In Rs">
+        </div>
+        <div>
+            <label for="choose description">Choose Description:</label>
+            <input type="text" name="chooseDescription" id="choose description" placeholder="In words">
+        </div>
+        <div>
+            <label for="choose a category">Choose A category:</label>
+            <input type="text" name="chooseACategory" id="choose a category" placeholder="In words">
+        </div>
+        <div>
+            <button type="submit">Add Expense:</button>
+        </div>
+        
     </form>
     <ul id="listOfExpense"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
     <script src="expense.js"></script>
     
 </body>
